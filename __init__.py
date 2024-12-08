@@ -1,1 +1,1 @@
-from . import models
+from . import arie_purchase
