@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action Window -->
+    <record id="purchase_actions_id" model="ir.actions.act_window">
+        <field name="name">Pembelian</field>
+        <field name="res_model">arie.purchase</field>
+        <field name="view_mode">tree,form</field> <!-- Tambahkan view_mode -->
+    </record>
+
+    <!-- Action Window View -->
+    <record id="pembelian_actions_tree_view_id" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="arie_purchase_tree_view_id"/> <!-- Hilangkan prefiks -->
+        <field name="act_window_id" ref="purchase_actions_id"/> <!-- Hilangkan prefiks -->
+    </record>
+</odoo>

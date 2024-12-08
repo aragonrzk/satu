@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="parent_arie_purchase_id"
+        name="Pembelian"
+        sequence="10"/>
+
+    <menuitem
+        id="child_arie_purchase_id"
+        name="Pembelian - Dept Store"
+        parent="parent_arie_purchase_id"
+        action="purchase_actions_id"/> <!-- Perbaikan ID -->
+</odoo>
